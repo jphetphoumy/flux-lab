@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  path: "./infrastructure/apps/apache"
+  path: ./clusters/VMCluster/infrastructure/apps/apache
   prune: true
   sourceRef:
     kind: GitRepository

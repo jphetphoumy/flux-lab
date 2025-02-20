@@ -1,21 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: apache
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: apache
   template:
     metadata:
       labels:
-        app: nginx
+        app: apache
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: apache
+        image: httpd:latest  # Apache Web Server
         ports:
         - containerPort: 80
-

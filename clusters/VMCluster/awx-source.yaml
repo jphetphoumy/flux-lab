@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: awx
-  namespace: flux-system
+  namespace: awx 
 spec:
   interval: 5m0s
   ref:

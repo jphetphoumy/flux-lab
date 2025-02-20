@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  path: ./cluster/VMCluster/infrastructure/cluster/storage
+  path: ./clusters/VMCluster/infrastructure/cluster/storage
   prune: true
   sourceRef:
     kind: GitRepository
